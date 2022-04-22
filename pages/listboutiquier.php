@@ -96,7 +96,7 @@ $alluser = $transaction->getAlluser($alluser);
             <td><?=$user["pwd"] ?></td>
             <td><?=$user["profile"] ?></td>
             <td>
-            <a class="btn btn-outline-success" href="edituser.php?id=<?=$user['id']?>">Ajouter</a>
+            <a class="btn btn-outline-success" href="edituser.php?id=<?=$user['id']?>">Modifier</a>
             <a class="btn btn-outline-danger" href="deleteuser.php?id=<?=$user['id']?>">Supprimer</a>
             </td>
         </tr>
