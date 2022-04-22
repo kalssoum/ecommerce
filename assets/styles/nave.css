@@ -1,0 +1,94 @@
+*,body,html{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: "font1";
+    src: url('../fonts/Send_Flowers/SendFlowers-Regular.ttf');
+}
+@font-face{
+    font-family: "font2";
+    src: url('../fonts/Hurricane/Hurricane-Regular.ttf');
+}
+@font-face{
+    font-family: "font3";
+    src: url('../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf');
+}
+@font-face{
+    font-family: "font4";
+    src: url('../fonts/Lobster/Lobster-Regular.ttf');
+}
+@font-face{
+    font-family: "font5";
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+@font-face{
+    font-family: "font6";
+    src: url('../fonts/Rubik_Glitch/RubikGlitch-Regular.ttf');
+}
+.listproduits img{
+    height: 200px;
+}
+.myslide{
+    height: 400px;
+    object-fit: cover;
+}
+.Mtot{
+    float: right;
+    margin-right: 10%;
+}
+.custom-nav{
+    padding: 50px;
+    padding-left: 15px;
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+}
+.men{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 10px;
+    color: white;
+    font-family: "font5";
+    font-size: 1em;
+    text-decoration: none;
+}
+.logo{
+    font-family: "font5";
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 40px;
+    
+}
+li:hover{
+}
+
+/**************************************panier**************************************************************/
+.tProduit{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F5B7B1;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.tProduit th{
+    font-family: "font1";
+    font-size: 1.4em;
+}
+body{
+    background-color: #F2F3F4;
+}
+.ligne img{
+    width: 100px;
+}
+.bouton{
+    margin-left: 120px;
+}
+
+
+
+
+
+
+

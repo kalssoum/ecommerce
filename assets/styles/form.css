@@ -1,0 +1,22 @@
+*,body,html{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../images/beauty-4993472_1920.jpg');
+}
+.boutiquierform{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 10%;
+    /*border: 1px solid #f4f6f7;*/
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow:rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /*background-image: url('../images/apparel-1850804_1920.jpg');*/
+    /*background-color: #F5B7B1;*/
+}
+.titre{
+    text-align: center;
+}
