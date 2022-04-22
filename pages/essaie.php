@@ -33,11 +33,4 @@
 
 
 
-.formu{
-    width: 40%;
-    border: 1px solid #f4f6f7;
-    border-radius: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
-    /*opacity: 0.5;*/
-}
+
