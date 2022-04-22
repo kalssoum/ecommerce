@@ -9,6 +9,18 @@ if (!isset($_SESSION['user'])) {
 require('../DBTransaction.php');
 $transaction = new DBTransaction();
 $produit = $transaction->getProductById($_GET['idProduit']);
+
+if (isset($_POST)&& isset($_POST['clique'])) {
+  $nom = $_POST['nom'];
+  $prixU = $_POST['prixU'];
+  $description = $_POST['description'];
+  $id_boutiquier = $_SESSION['user']['id'];
+$product = $transaction->updateProduit($_GET['idProduit'],$nom, $prixU, $description);
+if ($product==1){
+  header("location:listproduit.php");
+}
+$msg = "une erreur s'est produite";
+}
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +86,7 @@ $produit = $transaction->getProductById($_GET['idProduit']);
   </div>
 </nav>
 
-<form action="editproduit.php" method="POST" enctype="multipart/form-data" class="row g-3 boutiquierform" >
+<form action="editproduit.php?idProduit=<?=$_GET['idProduit']?>" method="POST" enctype="multipart/form-data" class="row g-3 boutiquierform" >
   <div class="col-md-6">
     <label for="nom" class="form-label">Nom</label>
     <input name="nom" value="<?=$produit['nom']?>" type="text" class="form-control" id="nom">

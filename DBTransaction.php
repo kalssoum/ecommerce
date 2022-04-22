@@ -220,6 +220,11 @@
         $result = $this->database->query("SELECT * FROM `User` WHERE id='$id'");
         return $result->fetch();
     }
+
+    public function updateProduit($id_produit,$nom, $prixU, $description){
+        $result = $this->database->query("UPDATE `Produit` SET nom='$nom', prixU='$prixU', description='$description' WHERE  id='$id_produit'");
+        return 1;
+}
     
 }
 ?>
