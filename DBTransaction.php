@@ -204,7 +204,7 @@
         return $result->fetchAll();
     }
 
-    public function updateProfil($id, $nom, $prenom, $adresse, $tel, $pwd, $profil){
+    public function updateProfil($id, $nom, $prenom, $adresse, $tel){
         try {
             $result = $this->database->query("UPDATE `User` SET nom='$nom', prenom='$prenom', adresse='$adresse', tel='$tel' WHERE id='$id'");
             return 1;
@@ -212,7 +212,7 @@
             return 0 ;
         }
     }
-    public function updateUser($id, $nom, $prenom, $adresse, $tel){
+    public function updateUser($id, $nom, $prenom, $adresse, $tel,, $pwd, $profil){
             $result = $this->database->query("UPDATE `User` SET nom='$nom', prenom='$prenom', adresse='$adresse', tel='$tel', pwd='$pwd', profil='$profil', corbeille='0' WHERE id='$id'");
             return 1;
     }

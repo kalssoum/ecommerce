@@ -83,7 +83,7 @@ if (isset($_POST) && isset($_POST['clique'])) {
   </div>
 </nav>
 
-<form action="editproduit.php" method="POST" class="row g-3 boutiquierform" >
+<form action="editproduit.php?id=<?=$_GET['id']?>" method="POST" class="row g-3 boutiquierform" >
   <div class="col-md-6">
     <label for="nom" class="form-label">Nom</label>
     <input name="nom" value="<?=$Profil['nom']?>"  type="text" class="form-control" id="nom">
