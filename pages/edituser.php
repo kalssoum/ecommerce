@@ -15,8 +15,8 @@ if (isset($_POST) && isset($_POST['clique'])) {
   $adresse = $_POST['adresse'];
   $tel = $_POST['tel'];
   $pwd = $_POST['pwd'];
-  $Profil = $_POST['profil'];
-  $users = $transaction->updateUser($_SESSION['user']['id'],$nom, $prenom, $adresse, $tel,$pwd, $profil);
+  $users = $transaction->updateUser($_GET['id'],$nom, $prenom, $adresse, $tel,$pwd);
+  header('location:listboutiquier.php');
 }
 ?>
 
@@ -83,7 +83,7 @@ if (isset($_POST) && isset($_POST['clique'])) {
   </div>
 </nav>
 
-<form action="editproduit.php?id=<?=$_GET['id']?>" method="POST" class="row g-3 boutiquierform" >
+<form action="edituser.php?id=<?=$_GET['id']?>" method="POST" class="row g-3 boutiquierform" >
   <div class="col-md-6">
     <label for="nom" class="form-label">Nom</label>
     <input name="nom" value="<?=$Profil['nom']?>"  type="text" class="form-control" id="nom">
@@ -104,11 +104,7 @@ if (isset($_POST) && isset($_POST['clique'])) {
     <label for="telephone" class="form-label">$password</label>
     <input name="pwd" value="<?=$Profil['pwd']?>" type="text" class="form-control" id="pwd">
   </div>
-  <div class="col-md-6">
-    <label for="text" class="form-label">profil</label>
-    <input name="profil" value="<?=$Profil['profile']?>" type="text" class="form-control" id="profil">
-  </div>
-
+  
   </div>
   <div class="col-12">
     <button name="clique" type="submit" class="btn btn-primary">Modifier</button>

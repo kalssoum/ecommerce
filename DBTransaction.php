@@ -212,8 +212,8 @@
             return 0 ;
         }
     }
-    public function updateUser($id, $nom, $prenom, $adresse, $tel,, $pwd, $profil){
-            $result = $this->database->query("UPDATE `User` SET nom='$nom', prenom='$prenom', adresse='$adresse', tel='$tel', pwd='$pwd', profil='$profil', corbeille='0' WHERE id='$id'");
+    public function updateUser($id, $nom, $prenom, $adresse, $tel, $pwd){
+            $result = $this->database->query("UPDATE `User` SET nom='$nom', prenom='$prenom', adresse='$adresse', tel='$tel', pwd='$pwd', corbeille='0' WHERE id='$id'");
             return 1;
     }
     public function getProfilByid($id){
