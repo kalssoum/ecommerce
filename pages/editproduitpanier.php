@@ -6,7 +6,6 @@ if (!isset($_SESSION['user'])) {
 require('../DBTransaction.php');
 $transaction = new DBTransaction();
 $produit = $transaction->getProduitPanierByid($_GET['id']);
-var_dump($produit);
 var_dump($produit['nbr']);
 if (isset($_POST) && isset($_POST['clique'])) {
   $nbr = $_POST['nbr'];
