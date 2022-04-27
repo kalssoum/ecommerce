@@ -101,7 +101,7 @@ if (isset($_POST) && isset($_POST['clique'])) {
     <input name="tel" value="<?=$Profil['tel']?>" type="number" class="form-control" id="telephne">
   </div>
   <div class="col-md-6">
-    <label for="telephone" class="form-label">$password</label>
+    <label for="pwd" class="form-label">$password</label>
     <input name="pwd" value="<?=$Profil['pwd']?>" type="text" class="form-control" id="pwd">
   </div>
   
