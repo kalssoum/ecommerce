@@ -122,7 +122,7 @@
   <div class="card-body">
     <h5 class="card-title"><?=$produit['nom']?></h5>
     <p class="card-text"><?=$produit['description']?></p>
-    <p class="prix">Prix Unitaire : <?=number_format($produit['prixU'])?> cfa</p>
+    <p class="prix">Prix Unitaire : <?=number_format($produit['prixU'])?> Fcfa</p>
     <a class="btn btn-outline-success" href="pages/ajoutpanier.php?idProduit=<?=$produit['id']?>"><i class="bi bi-cart-plus"></i>Ajouter</a>
     
   </div>

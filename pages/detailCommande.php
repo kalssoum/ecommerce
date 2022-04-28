@@ -84,7 +84,7 @@ $ProduitCommande = $transaction->getProduitCommande($_GET['idcommande']);
             <td><?=$commande["nom"] ?></td>
             <td><?=$commande["prixU"] ?></td>
             <td><?=$commande["nbr"] ?></td>
-            <td><?=number_format($commande['montantTOT'],)?> cfa</td>
+            <td><?=number_format($commande['montantTOT'],)?> Fcfa</td>
         </tr>
         <?php } ?>
         </tbody>
