@@ -27,7 +27,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
   <div class="container-fluid menu">
-    <a class="logo" href="#">SBB-Fashion</a>
+    <a class="logo" href="#">OKM-Fashion</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -73,6 +73,10 @@
           <a class="men" href="pages/inscription.php"><i class="bi bi-card-text"></i>Inscription</a>
         </li>
       </ul>
+      <form action="index.php" method="GET" class="d-flex barre">
+      <input class="form-control" type="search" name="search" aria-label="search">
+      <button name="clique" type="submit" class="btn btn-primary"><i class="bi bi-search"></i></button>
+</form>
     </div>
   </div>
 </nav>

@@ -37,7 +37,7 @@
         }
 
         public function getnomProduct($search){
-            $result = $this->database->query("SELECT * FROM Produit WHERE nom LIKE '%' .$search. '%'");
+            $result = $this->database->query("SELECT * FROM Produit WHERE nom LIKE '%" .$search. "%'");
             return $result->fetchAll();
         }
 
