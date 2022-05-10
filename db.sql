@@ -65,11 +65,11 @@ CREATE TABLE `ProduitPanier`(
 -- Some request:
 
 -- CRUD For User
-INSERT INTO `User` VALUE(null,"sene","fatou","pikine","762917099","passer123","ADMIN");
+INSERT INTO `User` VALUE(null,"sene","fatou","pikine","762917099","passer123","ADMIN","0");
 
-INSERT INTO `User` VALUE(null,"bangare","abdoulaye","mbao","777777777","azerty123","BOUTIQUIER");
+INSERT INTO `User` VALUE(null,"bangare","abdoulaye","mbao","777777777","azerty123","BOUTIQUIER","0");
 
-INSERT INTO `User` VALUE(null,"diouf","aliou","hlm","75894623","pass14","CLIENT");
+INSERT INTO `User` VALUE(null,"diouf","aliou","hlm","75894623","pass14","CLIENT","0");
 -- CRUD For Produit
 INSERT INTO `Produit` VALUE(NULL ,"nescafe","donne du gout a ton cafe",1500,"",2);
 INSERT INTO `Produit` VALUE(NULL ,"Lait","Vitalait",1600,"",2);
