@@ -22,7 +22,7 @@ CREATE TABLE `Produit`(
  `prixU` float,
  `image` VARCHAR(255),
  `id_boutiquier` int,
- `corbeille` int
+ `corbeille` int,
  CONSTRAINT FOREIGN KEY (`id_boutiquier`) REFERENCES `User`(`id`)
 );
 
