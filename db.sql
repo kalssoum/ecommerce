@@ -11,7 +11,8 @@ CREATE TABLE `User`(
  `adresse` VARCHAR(100),
  `tel` VARCHAR(20) UNIQUE,
  `pwd` VARCHAR(100),
- `profile` ENUM("ADMIN", "BOUTIQUIER", "CLIENT")
+ `profile` ENUM("ADMIN", "BOUTIQUIER", "CLIENT"),
+  `corbeille` int
 );
 
 CREATE TABLE `Produit`(
@@ -21,6 +22,7 @@ CREATE TABLE `Produit`(
  `prixU` float,
  `image` VARCHAR(255),
  `id_boutiquier` int,
+ `corbeille` int
  CONSTRAINT FOREIGN KEY (`id_boutiquier`) REFERENCES `User`(`id`)
 );
 
